@@ -74,10 +74,10 @@ function draw() {
   stroke("red");
   text("Weak", 1200,480);
 
-  touching(bullet1, wall1);
-  touching(bullet2, wall2);
-  touching(bullet3, wall3);
-  touching(bullet4, wall4);
+  touch(bullet1, wall1);
+  istouching(bullet2, wall2);
+  move(bullet3, wall3);
+  affect(bullet4, wall4);
 
   drawSprites();
 }
